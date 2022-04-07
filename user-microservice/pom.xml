@@ -19,7 +19,7 @@
 	<description>User microservice that handles CRUD operations on users.</description>
 	<properties>
 	<spring-cloud.version>2020.0.0</spring-cloud.version>
-		<java.version>1.8</java.version>
+		<java.version>1.8</java.version> <!--1.8-->
 	</properties>
 	<dependencies>
 		<dependency>
