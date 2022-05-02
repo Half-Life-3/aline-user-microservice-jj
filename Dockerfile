@@ -1,4 +1,4 @@
-#FROM openjdk:18
+
 #docker run --env-file ./config.txt -p 8070:8070 test
 #docker run --network=opennetworkconnection --env-file ./config.txt -t userms -p 8070:8070 userms 
 #docker run --network=opennetworkconnection --env-file ./config.txt -p 8070:8070 userms 
