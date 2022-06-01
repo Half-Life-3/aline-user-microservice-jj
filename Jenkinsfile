@@ -5,10 +5,10 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-				git submodule deinit --all -f
-				git submodule init
-				git submodule sync
-				git submodule update
+				sh "git submodule deinit --all -f"
+				sh "git submodule init"
+				sh "git submodule sync"
+				sh"git submodule update"
 				sh "mvn clean package"
             }
         }
