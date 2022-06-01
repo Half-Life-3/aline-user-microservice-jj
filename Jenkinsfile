@@ -9,7 +9,7 @@ pipeline {
 				git submodule init
 				git submodule sync
 				git submodule update
-				mvn clean package
+				sh "mvn clean package"
             }
         }
         stage('Test') {
