@@ -5,7 +5,11 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Building..'
-				sh "mvn --version"
+				git submodule deinit --all -f
+				git submodule init
+				git submodule sync
+				git submodule update
+				mvn clean package
             }
         }
         stage('Test') {
