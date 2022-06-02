@@ -26,7 +26,7 @@ pipeline {
                 echo 'Deploying....'
 				script{
 						docker.withRegistry('https://445292818922.dkr.ecr.us-east-1.amazonaws.com/alineservice-jj','ecr:us-east-1:aws-creds'){
-					app.push("wowee")
+					app.push("latest")
 					}
 				}
             }
