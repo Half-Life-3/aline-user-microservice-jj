@@ -2,7 +2,7 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Maven Test') {
             steps {
                 echo 'Building..'
 				sh "git submodule deinit --all -f"
@@ -16,12 +16,12 @@ pipeline {
 				}
             }
         }
-        stage('Test') {
+        stage('Maven Build') {
             steps {
                 echo 'Haha, yeah...'
             }
         }
-        stage('Deploy') {
+        stage('Docker Deploy') {
             steps {
                 echo 'Deploying....'
 				script{
