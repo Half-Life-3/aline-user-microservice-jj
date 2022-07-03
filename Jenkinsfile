@@ -79,7 +79,7 @@ pipeline {
 				
                 echo 'Deploying image to cloud...'
 				script{
-					docker.withRegistry('http://127780244987.dkr.ecr.us-east-1.amazonaws.com','ecr:us-east-1:aws-team'){
+					docker.withRegistry('https://127780244987.dkr.ecr.us-east-1.amazonaws.com','ecr:us-east-1:aws-team'){
 					app.push("latest")
 					}
 				}
